@@ -5,7 +5,11 @@ require("@babel/register")({
     ],
     "plugins": [
         [
-          "@babel/plugin-proposal-class-properties"
+          "@babel/plugin-proposal-class-properties",
+           require.resolve('babel-plugin-module-resolver'),
+            {
+                root: ["./src/"],
+            }
         ]
     ]
 });
