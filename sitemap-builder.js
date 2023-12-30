@@ -5,7 +5,10 @@ require("@babel/register")({
     ],
     "plugins": [
         [
-          "@babel/plugin-proposal-class-properties"
+          "@babel/plugin-proposal-class-properties",
+          {
+            "loose": true
+          }
         ]
     ]
 });
