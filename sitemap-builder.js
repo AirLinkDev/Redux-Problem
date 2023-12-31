@@ -1,17 +1,14 @@
 require("@babel/register")({
-    "presets": [
-        "@babel/preset-env",
-        "@babel/preset-react"
-    ],
-    "plugins": [
+    presets: ["@babel/preset-env", "@babel/preset-react"],
+    plugins: [
         [
-           require.resolve('babel-plugin-module-resolver'),
+            require.resolve('babel-plugin-module-resolver'),
             {
                 root: ["./src/"],
             }
         ]
-    ]
-});
+        ]
+    });
 
 
 const router = require('./src/App').default;
